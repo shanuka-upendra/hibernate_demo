@@ -13,6 +13,7 @@ public class Main {
         student.setAge(19);
 
         Configuration config = new Configuration();
+        config.addAnnotatedClass(edu.icet.Student.class);
         config.configure("hibernate.cfg.xml");
 
         SessionFactory factory = config.buildSessionFactory();
